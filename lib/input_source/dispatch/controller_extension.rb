@@ -1,14 +1,14 @@
 module InputSource
-	module Dispatch
-		module ControllerExtension
-			def converse(hash, key)
-		  	converse_parameters(hash[key], key)
-		  end
+  module Dispatch
+    module ControllerExtension
+      def converse(hash, key)
+        converse_parameters(hash[key], key)
+      end
 
-			private
+      private
 
-			include ConverseParameters
-		end
-	end
-	
+      include ConverseParameters
+    end
+  end
+  
 end
